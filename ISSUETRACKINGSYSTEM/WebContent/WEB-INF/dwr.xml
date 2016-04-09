@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead
+ Limited//DTD Direct Web Remoting 3.0//EN" "http://getahead.org/dwr//dwr30.dtd">
+<dwr>
+	<allow>
+		<!-- Create a new Java script object from defined class. -->
+		<create creator="new" javascript="AjaxStateDao">
+			<param name="class" value="dsynhub.its.dao.AjaxStateDao" />
+			<!-- <include method="selectState()"/> -->
+
+		</create>
+
+		<!-- Following line will convert Java Beans and POJOs to and from JavaScript 
+			objects. These converters are not enabled by default because DWR makes sure 
+			that is has permission before it exposes any of your classes. -->
+		<convert converter="bean" match="dsynhub.its.bean.StateBean" />
+
+
+		<create creator="new" javascript="AjaxCityDao">
+			<param name="class" value="dsynhub.its.dao.AjaxCityDao" />
+			<!-- <include method="selectState()"/> -->
+
+		</create>
+
+		<!-- Following line will convert Java Beans and POJOs to and from JavaScript 
+			objects. These converters are not enabled by default because DWR makes sure 
+			that is has permission before it exposes any of your classes. -->
+		<convert converter="bean" match="dsynhub.its.bean.CityBean" />
+	</allow>
+
+	<allow>
+		<!-- Create a new Java script object from defined class. -->
+		<create creator="new" javascript="AjaxModuleDao">
+			<param name="class" value="dsynhub.its.dao.AjaxModuleDao" />
+			<!-- <include method="selectState()"/> -->
+
+		</create>
+
+		<!-- Following line will convert Java Beans and POJOs to and from JavaScript 
+			objects. These converters are not enabled by default because DWR makes sure 
+			that is has permission before it exposes any of your classes. -->
+		<convert converter="bean" match="dsynhub.its.bean.ModuleBean" />
+	</allow>
+
+	<allow>
+		<!-- Create a new Java script object from defined class. -->
+		<create creator="new" javascript="AjaxTaskDao">
+			<param name="class" value="dsynhub.its.dao.AjaxTaskDao" />
+			<!-- <include method="selectState()"/> -->
+
+		</create>
+
+		<!-- Following line will convert Java Beans and POJOs to and from JavaScript 
+			objects. These converters are not enabled by default because DWR makes sure 
+			that is has permission before it exposes any of your classes. -->
+		<convert converter="bean" match="dsynhub.its.bean.TaskBean" />
+	</allow>
+</dwr>
+
